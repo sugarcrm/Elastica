@@ -1,4 +1,12 @@
+EARLY FIXES PULLED IN BY SUGARCRM
+
+
+2014-10-10
+- Fixed Response::isOk() to work better with bulk update api
+
+
 CHANGES
+
 
 2014-10-04
 - Release v1.3.4.0
