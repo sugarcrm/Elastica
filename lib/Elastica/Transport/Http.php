@@ -135,9 +135,7 @@ class Http extends AbstractTransport
 
         $response = new Response($responseString, curl_getinfo($this->_getConnection(), CURLINFO_HTTP_CODE));
 
-        if (defined('DEBUG') && DEBUG) {
-            $response->setQueryTime($end - $start);
-        }
+        $response->setQueryTime($end - $start);
 
         $response->setTransferInfo(curl_getinfo($conn));
 
